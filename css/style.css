@@ -1,0 +1,167 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* NavBar */
+#header-title{
+	float: left;
+	padding-top: 15px;
+	margin-bottom: 0px;
+	color: white;
+}
+#header-nav {
+	float: right;
+}
+#header-nav li {
+	display: inline-block;
+	vertical-align: top;
+}
+#header-nav li a {
+	display: block;
+	padding: 15px;
+}
+
+#header-nav li a:hover {
+	background-color: #FEFEFE;
+}
+
+body {
+	font-family: 'Courier New', 'Courier', 'sans-serif';
+	font-weight: 500;
+	color: #555;
+}
+h1 {
+	font-size: 72px;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 21px;
+	line-height: 1.2;
+}
+p {
+	font-size: 40px;
+	font-weight: 500px;
+	line-height: 30px;
+	margin-bottom:20px;
+	text-shadow:
+    -1px -1px 0 #B20D0F,
+    1px -1px 0 #B20D0F,
+    -1px 1px 0 #B20D0F,
+    1px 1px 0 #B20D0F; 
+
+}
+/**** Top *****/
+#top {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+	background-color: #CDB0D2;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url("../images/zombie.jpg") no-repeat center center;
+	background-size: cover;
+}
+#top h1{
+	color: #000000;
+	font-weight: 800;
+	text-shadow:
+    -3px -3px 0 #F3F7FF,
+    3px -3px 0 #F3F7FF,
+    -3px 3px 0 #F3F7FF,
+    3px 3px 0 #F3F7FF; 
+    float: right;
+}
+#top h2 {
+	color: #CECECE;
+	font-weight: 300;
+
+}
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+a {
+	font-style: bold;
+	text-decoration: none;
+	color: #000000;
+	font-size: 40px;
+}
+/******* Bottom Section *******/
+#bottom {
+	background-color: #ccc;
+	text-align: center;
+}
+
+#bottom h2 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+  	font-weight: 600;
+  	font-size: 32px;
+}
+#bottom h3 {
+	font-family: 'Courier Neue', Helvetica, Arial, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.boldBlack h3 {
+	color: "black";
+	font-style: bold;
+}
+
+.one-half {
+	background-color: #fefefe;
+  	border: 1px solid #582D41; 
+  	width: 48%;
+  	/* float: left; */
+  	padding: 30px 20px;
+  	margin: 1%;
+  	display: inline-block;
+  	verticle-align: top;
+}
+/**** clearfix *****/
+.row:before,
+.row:after, .clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+} 
+.row:after, /* Add .clearfix:after */ {    
+    clear: both;
+}
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/***** Images ******/
+#ryan-image {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	border-radius: 200px;
+}
+#bottom img {
+	max-height: 150px;
+	border-radius: 10px;
+}
+
+/**** Button ****/
+.button {
+	color: white;
+	font-size: 24px;
+	background-color: #428bca;
+	border-color: #357EBD;
+	border-radius: 5px;
+	padding: 5px;
+}
+.button:hover {
+	background-color: #2ECC71;
+}
+/****** Universal *******/
+.skinny {
+	color: #FEFEFE;
+	font-weight: 100;
+}
+.container {
+	width: 970px;
+	margin: 0 auto;
+}
