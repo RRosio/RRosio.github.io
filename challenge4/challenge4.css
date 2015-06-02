@@ -1,0 +1,161 @@
+/* * {
+	box-sizing: border-box;
+	font-weight: 500;
+}
+body, main, figure, li, h1 {
+	margin: 0;
+}
+header {
+	box-shadow: 0 0 2px #000;
+	overflow: auto;
+	font-family: sans-serif;
+}
+ .flex-container {
+	height: 75px;
+	max-width: 1020px;
+	margin: 0 auto;
+	justify-content: space-between;
+ 	align-items: center;
+ 	display: -webkit-box;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+ 	display: -webkit-flex;
+ 	display: flex;	
+}
+h1 {
+	font-size: 24px;
+	padding: 24px 0 24px 5px;
+	font-weight: 600;
+}
+ul {
+	display: -webkit-box;
+  	display: -moz-box;
+	display: -ms-flexbox;
+ 	display: -webkit-flex;
+	display: flex;
+}
+ul {
+	list-style: none;
+	padding: 28px 0;
+}
+ul a {
+	color: #8c989e;
+	text-decoration: none;
+}
+a:hover, ul li:last-child a:hover {
+	background-color: #909090;
+	color: white;
+}
+/*
+li {
+	padding: 0 20px;
+  This padding does not make the entire box a link!
+}
+** <- last* = /
+ul li a { /*this specification makes the entire block a clickable link! ** <- last* = /
+	padding: 20px 25px;
+}
+ul li:last-child a, h1 {
+	color: #5fcf80;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+/*
+@media (max-width: 768px) {
+.flex-container ul{
+	flex-direction: column;
+}
+.flex-container {
+	text-align: center;
+}
+ /*end comment  '*-/'*/
+
+/* /before the * ahead */ /*
+.flex-container {
+	justify-content: space-between;
+ 	display: flex;	
+}
+ul {
+	display: flex;
+}
+a {
+	text-decoration: none;
+	color: #5fcf80;
+}
+h1, ul:lilast-child a {
+	color: #8c989e;
+}
+ul {
+	 display flex;
+}
+h1 {
+	font-size: 24px;
+	padding: 24px 0 24px 5px;
+	font-weight: 600;
+
+}	
+ul li a {
+	padding: 20px, 25px;
+	display: block;
+}
+/*end comment*/
+
+header {
+	font-family: sans-serif;
+	font-weight: 500;
+	box-shadow: 0 0 2px #cecece;
+}
+
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	color: #8c989e;
+}
+
+h1 {
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h1, ul li:last-child a {
+	color: #5fcf80;
+}
+
+ul {
+	display: flex;
+}
+
+ul li a {
+	padding: 25px 25px;
+	display: block;
+}
+
+ul li a:hover {
+	background-color: #5fcf80;
+	color: #fefefe;
+}
+
+@media (max-width:768px) {
+	.container, ul {
+		flex-direction: column;
+	}
+
+	.container {
+		text-align: center;
+	}
+
+	h1, li {
+		box-shadow: 0 0 2px #cecece;
+	}
+}

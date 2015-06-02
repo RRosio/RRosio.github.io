@@ -1,0 +1,108 @@
+* {
+	font-weight: 500;
+}
+
+body, main, figure, li, h1 {
+	margin: 0;
+}
+
+header {
+	box-shadow: 0 0 2px #000;
+	overflow: auto;
+	font-family: sans-serif;
+}
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 24px;
+	padding: 24px 0 24px 5px;
+	font-weight: 600;
+	float: left;
+}
+nav {
+	float: right;
+}
+ul {
+	list-style: none;
+	padding: 28px 0;
+}
+ul a {
+	color: #8c989e;
+	text-decoration: none;
+}
+li, h1 {
+	display: inline-block;
+}
+li {
+	padding:0 20px;
+}
+
+ul li:last-child a, h1 {
+	color: #5fcf80;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main {
+	background-color: tomato;
+}
+
+aside {
+	background-color: green;
+}
+
+.flex {
+	display: flex;
+}
+
+main, aside {
+	height: 500px;
+}
+
+main {
+	flex-basis: 50%;
+}
+
+aside {
+	flex-basis: 25%;
+}
+/*  both asides are together to the right
+#blue {
+	background-color: blue;
+}
+*/
+/*********************change order *****************************/
+main {
+	order: 2;
+}
+aside {
+	order: 1;
+}
+.order {
+	background-color: blue;
+	order: 3;
+}
+/************************************************************/
+@media (max-width: 768px) {
+	.flex {
+		flex-direction: column;
+	}
+
+	main, aside {
+		flex: 0 auto;
+	}
+
+	main {
+		order: 2;
+	}
+
+	aside {
+		order: 1;
+	}
+}

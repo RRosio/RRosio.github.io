@@ -1,0 +1,170 @@
+header {
+	/*font-family: sans-serif;*/
+	font-weight: 500;
+	/*box-shadow: 0 0 2px #cecece;*/
+}
+
+#peaceImage {
+	height: 80px;
+	align-self: flex-start;
+}
+
+.navBar a{
+	color: #272822;
+}
+
+
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+	top: 0;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #8C989E;
+}
+
+h1 {
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.flex {
+	display: flex;
+}
+
+ul li {
+	position: relative;
+}
+
+ul li a {
+	padding: 25px 25px;
+	display: block;
+}
+
+ul li a:hover {
+	background-color: #5fcf80;
+	color: #fefefe;
+}
+
+ul li:hover ul {
+	max-height: 500px;
+}
+
+ul li ul {
+	position: absolute;
+	flex-direction: column;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s linear .1s;
+}
+
+ul li ul li a {
+	background-color: #5fcf80;
+	color: #fefefe;
+}
+
+#example {
+	flex: 0 1 426px;
+}
+
+#child-example li:nth-child(2n) a{
+	background-color: red;
+}
+
+aside {
+	background-color: #F7F7F7;
+	position: fixed;
+	width : 426px;
+	border: 1px solid #EFEEF0;
+	bottom: 30px;
+	top: 80px;
+	overflow: scroll;
+}
+
+article {
+	padding-left: 20px;
+	text-indent: 10px;
+	position: fixed;
+	margin-left: 426px;
+	overflow: scroll;
+	border: 1px solid #EFEEF0;
+	bottom: 30px;
+	top: 80px;
+}
+ 
+p { 
+	text-indent: 20px;
+	line-height: 24px;
+	font-size: 20px;
+}
+
+.diffFlex {
+	justify-content: flex-start;
+}
+
+li {
+	display: flex;
+}
+footer{
+	bottom: 0;
+	position: fixed;
+	width:100%;
+	height: 30px;
+	background-color: #9A9B9B;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 30px;
+}
+
+footer a{
+	flex-grow:1;
+	color: black;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.footerA {
+	height: 30px;
+	padding: 0;
+	align-items: center;
+	align-content: center;
+}
+
+.footerA {
+
+}
+
+footer a:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.padded {
+	padding-left: 10px;
+}
+
+
+
+@media (max-width:768px) {
+	.container, ul {
+		flex-direction: column;
+	}
+
+	.container {
+		text-align: center;
+	}
+
+	h1, li {
+		box-shadow: 0 0 2px #cecece;
+	}
+}
