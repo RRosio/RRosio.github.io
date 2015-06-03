@@ -1,0 +1,13 @@
+.bigger {
+	width: 200px;
+	height: 200px;
+}
+
+img:hover {
+	opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+
+.myClass a{
+	text-decoration: none;
+}
