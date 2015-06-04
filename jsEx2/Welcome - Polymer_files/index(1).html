@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.polymer-project.org/1.0/samples/homepage/friend-list/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style scope="iron-icon">iron-icon {
+  position: relative;
+
+      vertical-align: middle;
+
+      fill: currentcolor;
+}</style><style scope="iron-icon-0">iron-icon.iron-icon-0 {
+  display:-ms-inline-flexbox;
+      display:-webkit-inline-flex;
+      display:inline-flex;-ms-flex-align:center;
+      -webkit-align-items:center;
+      align-items:center;
+      -ms-flex-pack:center;
+      -webkit-justify-content:center;
+      justify-content:center;
+
+
+      width:24px;
+
+      height:24px;
+}</style><style scope="contact-card">contact-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+contact-card  > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+contact-card  > span {
+  font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+contact-card  > iron-icon {
+  color: #9E9E9E;
+}
+
+[hidden].contact-card {
+  display: none;
+}</style><style scope="friend-list">contact-card.friend-list {
+  margin-bottom: 16px;
+}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <script src="webcomponents-lite.js"></script>
+    <link rel="import" href="https://www.polymer-project.org/1.0/samples/homepage/friend-list/friend-list.html">
+  </head>
+  <body>
+    <friend-list>
+    <firebase-collection location="https://users1.firebaseio.com/users" class="style-scope friend-list" limit-to-first="100">
+    </firebase-collection>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Luis Hoppe" src="128.jpg">
+        <span class="style-scope friend-list">Luis Hoppe</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Ryder Prosacco" src="128(1).jpg">
+        <span class="style-scope friend-list">Ryder Prosacco</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Irwin Mueller" src="128(2).jpg">
+        <span class="style-scope friend-list">Irwin Mueller</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Miss Isabella Rolfson" src="128(3).jpg">
+        <span class="style-scope friend-list">Miss Isabella Rolfson</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Dr. Cassie Keeling" src="128(4).jpg">
+        <span class="style-scope friend-list">Dr. Cassie Keeling</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Dr. Madelynn Schamberger" src="128(5).jpg">
+        <span class="style-scope friend-list">Dr. Madelynn Schamberger</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Dominique Schmidt" src="128(6).jpg">
+        <span class="style-scope friend-list">Dominique Schmidt</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Mr. Aglae Buckridge" src="128(7).jpg">
+        <span class="style-scope friend-list">Mr. Aglae Buckridge</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Rowland Heller" src="128(8).jpg">
+        <span class="style-scope friend-list">Rowland Heller</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Quincy Schimmel" src="128(9).jpg">
+        <span class="style-scope friend-list">Quincy Schimmel</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Tierra VonRueden" src="128(10).jpg">
+        <span class="style-scope friend-list">Tierra VonRueden</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Travis Larson" src="128(11).jpg">
+        <span class="style-scope friend-list">Travis Larson</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Oceane Rempel" src="128(12).jpg">
+        <span class="style-scope friend-list">Oceane Rempel</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Ellen Wisozk" src="128(13).jpg">
+        <span class="style-scope friend-list">Ellen Wisozk</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Dr. Vilma Hauck" src="128(14).jpg">
+        <span class="style-scope friend-list">Dr. Vilma Hauck</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Eliza Upton" src="128(15).jpg">
+        <span class="style-scope friend-list">Eliza Upton</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Clint Heller" src="128(16).jpg">
+        <span class="style-scope friend-list">Clint Heller</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Eugenia Dooley" src="128(17).jpg">
+        <span class="style-scope friend-list">Eugenia Dooley</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Electa Sawayn" src="128(18).jpg">
+        <span class="style-scope friend-list">Electa Sawayn</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    
+      <contact-card class="style-scope friend-list">
+    
+        <img class="style-scope friend-list" alt="Dorothy Beahan" src="128(19).jpg">
+        <span class="style-scope friend-list">Dorothy Beahan</span>
+      
+    <iron-icon icon="star" class="style-scope contact-card x-scope iron-icon-0" hidden=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" class="style-scope iron-icon"></path></g></svg>
+    <iron-meta id="meta" type="iconset" class="style-scope iron-icon"></iron-meta>
+  </iron-icon>
+  </contact-card>
+    <template is="dom-repeat" class="style-scope friend-list"></template>
+  </friend-list>
+  
+
+</body></html>
