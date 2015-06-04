@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		body{
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			flex-wrap: wrap;
+
+		}
+		 .fade {
+			height:600px;
+			width:600px;
+			background: no-repeat center center;
+			background-size: cover;
+		   opacity: 1;
+		   transition: opacity .25s ease-in-out;
+		   -moz-transition: opacity .25s ease-in-out;
+		   -webkit-transition: opacity .25s ease-in-out;
+		   display:block;
+   		}
+		.fade:hover {
+		   opacity: 0.5;
+		}
+		button {
+			width: 400px;
+			height: 50px;
+			background-color: red;
+			display:block;
+		}
+		/*.container
+		{
+			top: 0;
+			bottom: 400px;
+			right: 400px;
+		}*/
+	</style>
+</head>
+<body>
+	<div class='fade container'>
+	</div>
+	<button>
+		<input type ="text">
+		<input id='myBtn' type = "button">
+	</button>	
+</body>
+<script src='magic8ball.js'></script>
+</html>
