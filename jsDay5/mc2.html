@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var myObject= {
+		name: ['Iron Man', 'Hulk', 'Blackwidow', 'Captain America'],
+		power: ['Technology', 'Strength', 'Agility', 'Shield Power']
+	};
+
+	function displayObject(anObject) {
+		for (var name in anObject)
+		{
+			if (anObject.hasOwnProperty(name))
+			{
+				var printOut = '';
+				for (var i = 0; i < anObject.name.length; i++)
+				{
+					printOut += anObject.name[i] + '     |';
+				}
+				console.log(printOut);
+			}
+		}
+
+		for (var power in anObject)
+		{
+			if (anObject.hasOwnProperty(power))
+			{
+				var printOut = '';
+				for (var i = 0; i < anObject.power.length; i++)
+				{
+					printOut += anObject.power[i] + '     |';
+				}
+				console.log(printOut);
+			}
+		}
+
+	}
+
+	displayObject(myObject);
+
+</script>
+</html>
+
+
+
+
+	

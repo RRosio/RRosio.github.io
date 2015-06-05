@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+</body>
+<script>
+// ************* DON'T KNOW WHY IT DOESN'T WORK!! *************************
+	var ray = (function() {
+       var private; // local value not being used
+
+       return {
+           speak: function() {
+               console.log('hello');
+           },
+           sit: function() {
+               console.log('sit dog');
+           },
+           jump: function() {
+               console.log('jump dog');
+           },
+       };
+
+
+   })();
+
+   ray.speak();
+   ray.sit();
+   ray.jump();
+/*
+	function woah() {
+		var color = 'red';
+		console.log(this.color);    // Ray told us why this doesn't work!!!!!-  can you explain why???????
+	}
+
+	woah();
+	
+**************************************************************************************
+	var person = {
+		name: "ray",
+		action: function() {
+			console.log(this.name);
+		}
+	}
+
+	person.action();
+	*/
+</script>
+</html>
+

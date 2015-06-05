@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	 var myString = 'hello to the entire world of the wide and big blue sea';
+
+	 function parseString(aString) {
+	 var anArray = aString.split(' ');
+	 console.log(anArray);
+	 for (i = 0; i < anArray.length; i++)
+	 {
+	 	if (i === 0)
+	 	{
+	 		var newArrayOfWord = anArray[i].split('');
+	 		var a = newArrayOfWord[0].toUpperCase();
+	 		newArrayOfWord[0] = a;
+	 		var b = newArrayOfWord.join('');
+	 		console.log(b);
+	 	}
+	 	else
+	 	{
+	 		if (anArray[i] === " " || anArray[i + 1].split('').length >=2)
+	 		{
+	 			var newArrayOfWord = anArray[i + 1];
+	 			console.log(newArrayOfWord);
+	 			var splitWord = newArrayOfWord.split('');
+	 			var upperWordLetter = splitWord[0].toUpperCase();
+	 			newArrayOfWord[0]= upperWordLetter;
+	 			anArray[i + 1] = newArrayOfWord;
+	 			var b = anArray[i + 1].join(' ');
+	 			console.log(b);
+ 			}	
+	 	}
+	 }
+}
+
+	 parseString(myString);
+ </script>
+</html>

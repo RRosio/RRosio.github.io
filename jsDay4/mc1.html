@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	/*
+	var aArray= ['a', 'b', 'c', 'd'];
+
+	function displayArray(arrray) 
+	{
+		for(var i = 0; i < arrray.length; i++)
+		{
+			console.log(arrray[i] + ' ');
+		}
+	}
+	displayArray(aArray);
+	
+	*/
+	aArray= ['a', 'b', 'c', 'd'];
+
+	function displayArray(aArrray) 
+	{
+		for(var i = 0; i < aArray.length; i++)
+		{
+			var myNode = document.querySelector('body');
+			var myElement = document.createElement('p');
+			var a = aArray[i];
+			myElement.innerHTML = a + ' ';
+			myNode.appendChild(myElement);
+
+			
+		}
+	}
+	displayArray();
+
+/*
+	var aArray= ['a', 'b', 'c', 'd'];
+
+	function displayArray(aArrray) 
+	{
+		for(var i = 0; i < aArray.length; i++)
+		{
+			var myNode = document.querySelector('body');
+			var myElement = document.createElement('p');
+			var a = aArray[i];
+			myElement.innerHTML = aArray[i] + ' ';
+			myNode.appendChild(myElement);
+		}
+	}
+	displayArray(aArray);
+
+
+
+
+
+	function theFucntion() {
+		myVar= arguments[0];
+		for (var i= 0; i< myVar.length; i++){
+		console.log(myVar[i]);
+		}
+	}
+
+
+	(function () {
+	var myVar = arguments.[0];
+	for (var i in myVar) {
+	console.log(myVar[i]);
+	}
+	}(aArray));
+
+
+	*/
+</script>
+</html>

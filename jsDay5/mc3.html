@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+</body>
+
+<script>
+//*************************** Not Working!!!!!!!!!!!!!!!!!!***************************************
+	var myObject= {
+		name: ['Iron Man', 'Hulk', 'Blackwidow', 'Captain America'],
+		power: ['Technology', 'Strength', 'Agility', 'Shield Power']
+	};
+
+	function displayInfo(anObject) {
+		count = 0;
+		for (var name in anObject)
+		{
+			if(anObject.hasOwnProperty(name))
+			{
+				count++;
+				for (var i = 0; i < anObject.name.length; i++)
+				{
+					var myNode = document.querySelector('body');
+					var myElement = document.createElement('p');
+					myElement.innerHTML= anObject.name[i] + ' ';
+					myNode.appendChild(myElement);
+				}
+			}
+		}
+	}
+	displayInfo(myObject);
+
+
+			/*
+		for (var name in anObject)
+		{
+			if (anObject.hasOwnProperty(name))
+			{
+				var printOut = '';
+				for (var i = 0; i < anObject.name.length; i++)
+				{
+					printOut += anObject.name[i] + '     |';
+				}
+				console.log(printOut);
+			}
+		}
+	}
+	displayInfo(myObject);
+	*/
+</script>
+</html>

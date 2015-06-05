@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lost</title>
+	<style>
+	button {
+		width: 200px;
+		height: 100px;
+		background-color: green;
+		border-radius: 5px;
+	}
+	</style>
+</head>
+<body>
+	<button id='myBtn'>Click to Stop Count down</button>
+</body>
+<script>
+	var i =0;
+	myNode = document.querySelector('body');
+	count = 10;
+	var stop= false;
+	var myCount = document.createElement('p');
+	myNode.appendChild(myCount);
+
+	myNode.addEventListener('click', function()
+	{
+		if(stop === true)
+		{
+			stop=false;
+		} else
+		{
+			stop=true;
+		}
+	}, false)
+    i = setInterval(function Count()
+    {
+	    if (stop == true)
+		{
+			if (count<=0)
+			{
+				clearInterval(i);
+			}
+			else
+			{
+				myCount.innerHTML= count.toFixed(2);
+				count-=.01;
+			}
+		}
+	}, 10);	
+</script>
+</html>
+
+

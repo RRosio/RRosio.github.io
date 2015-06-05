@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lost</title>
+    <style>
+
+
+
+
+    </style>
+</head>
+<body>
+<script>
+    var warnings = [
+        'http://i.ytimg.com/vi/_fZe6xLx0jQ/maxresdefault.jpg',
+        'http://i.ytimg.com/vi/fE2sFKShkQk/hqdefault.jpg',
+        'http://i.ytimg.com/vi/_fZe6xLx0jQ/maxresdefault.jpg',
+        'http://i.ytimg.com/vi/fE2sFKShkQk/hqdefault.jpg',
+        'http://i.ytimg.com/vi/NytkeADbZt8/hqdefault.jpg'
+    ]
+
+    var index = 0;
+    var I = 0;
+    var T = 0;
+    var end = true;
+    var stop = false;
+    var node = document.querySelector('body');
+    var element = document.createElement('img');
+    element.src='http://i.ytimg.com/vi/NytkeADbZt8/hqdefault.jpg';
+    node.appendChild(element);
+    function lost() {
+       T = setTimeout(function alert() {
+            console.log("BOOOOOOM");
+           end=false;
+
+        }, 10000);
+        document.querySelector('body').addEventListener('click', function(){
+            clearTimeout(T);
+            stop=true;
+        }, false)
+
+
+         I = setInterval(function pop() {
+
+            element.src = warnings[index];
+            index++;
+             index %= warnings.length;
+            console.dir(element);
+             if(end==false) {
+                 clearInterval(I);
+                 element.src='http://2.bp.blogspot.com/_gJWmXPJu-Ps/TQBNDblWO-I/AAAAAAAACCA/znJyuz0w89M/s1600/you_won.png';
+             }if (stop==true){
+                 clearInterval(I);
+                 element.src='';
+             }
+        }, 2000);
+
+    }
+
+    lost();
+
+</script>
+</body>
+</html>

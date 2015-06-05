@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var ray = (function() {
+	  return {
+	    speak: function() {
+	      var myArguments = arguments[0] || '';
+	      var actionSpeak = myArguments.say || '';
+	      console.log(actionSpeak);
+	    },
+	    sayColor: function() {
+	      var myArguments = arguments[0] || '';
+	      var myColor = myArguments.color || '';
+	      console.log(myColor);
+	    },
+	    sayBackground: function() {
+	    	var myArguments
+	    }
+	  };
+	})();
+
+ray.speak();
+ray.speak({ say: 'howdy' });
+ray.sayColor({ color: 'blue' })
+</script>
+</html>
